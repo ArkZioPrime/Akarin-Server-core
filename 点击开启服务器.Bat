@@ -1,50 +1,47 @@
 @ECHO OFF
-title ÐÇÓò»¥Áª - ·þÎñÆ÷ºóÌ¨ 
+title Akarin - æœåŠ¡å™¨åŽå° 
 
 
-::----ÉèÖÃ¿ª·þÊ¹ÓÃÄÚ´æ
+::----è®¾ç½®å¼€æœä½¿ç”¨å†…å­˜
 SET Money=1024M
 
-::----ÉèÖÃ¿ª·þºËÐÄÃû×Ö
+::----è®¾ç½®å¼€æœæ ¸å¿ƒåå­—
 SET Server=akarin-1.13.2.jar
 
-::----ÉèÖÃ¿ª·þÓÅ»¯²ÎÊý£¬²»¶®ÇëÎðÐÞ¸Ä£¡£¡
+::----è®¾ç½®å¼€æœä¼˜åŒ–å‚æ•°ï¼Œä¸æ‡‚è¯·å‹¿ä¿®æ”¹ï¼ï¼
 SET SetCanShu=-XX:+UseG1GC -server -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat -XX:+AggressiveOpts -XX:MaxGCPauseMillis=10 -XX:+UseStringDeduplication
 
 
 cls
 color a0
 echo  - - - - - -   
-echo  µ±Ç°Ê±¼ä£º%date% %tm1%µã%TM2%·Ö
+echo  å½“å‰æ—¶é—´ï¼š%date% %tm1%ç‚¹%TM2%åˆ†
 @echo. -----------------------------------------------------------------
-@echo.                         Minecraft·þÎñÆ÷                                                                   
-@echo.                     ·þÎñÆ÷¼´½«¿ªÆô,ÇëµÈ´ý  
+@echo.                         MinecraftæœåŠ¡å™¨                                                                   
+@echo.                     æœåŠ¡å™¨å³å°†å¼€å¯,è¯·ç­‰å¾…  
 @echo.
-@echo.           ×¢Òâ:¹Ø±Õ·þÎñÆ÷Ç°ÇëÔÚºóÌ¨ÊäÈëStop±£´æÍæ¼ÒÊý¾Ý
-@echo.                      ·ñÔò¿ÉÄÜ»á³öÏÖ»ØµµÇé¿ö
+@echo.           æ³¨æ„:å…³é—­æœåŠ¡å™¨å‰è¯·åœ¨åŽå°è¾“å…¥Stopä¿å­˜çŽ©å®¶æ•°æ®
+@echo.                      å¦åˆ™å¯èƒ½ä¼šå‡ºçŽ°å›žæ¡£æƒ…å†µ
 @echo.                
 @echo. -----------------------------------------------------------------
 choice /t 2 /d y /n >nul
 :RESTART
 cls
 color 79
-@echo.   ©³------------------------------------©·
-@echo.   ©Ç By£ºÐÇÓò»¥ÁªÍøÂç ¼¼ÊõQQ£º975090682 ©Ï
-@echo.   ©»------------------------------------©¿
 @echo. 
-@echo.- Ô¤±¸¿ª·þÇ°¹¤×÷×¼±¸...
+@echo.- é¢„å¤‡å¼€æœå‰å·¥ä½œå‡†å¤‡...
 choice /t 2 /d y /n >nul
 @echo. 
-@echo.- [ ÉèÖÃ¿ª·þÄÚ´æ£º%Money% ]
+@echo.- [ è®¾ç½®å¼€æœå†…å­˜ï¼š%Money% ]
 choice /t 2 /d y /n >nul
 @echo. 
-@echo.- [ ÉèÖÃ¿ª·þºËÐÄÎª£º%Server% ]
+@echo.- [ è®¾ç½®å¼€æœæ ¸å¿ƒä¸ºï¼š%Server% ]
 choice /t 2 /d y /n >nul
 @echo. 
-@echo.- [ ÉèÖÃ¿ª·þÓÅ»¯²ÎÊý£º%SetCanShu% ]
+@echo.- [ è®¾ç½®å¼€æœä¼˜åŒ–å‚æ•°ï¼š%SetCanShu% ]
 choice /t 2 /d y /n >nul
 @echo. 
-@echo.- Ô¤±¸¿ª·þ¹¤×÷Íê±Ï,×¼±¸Æô¶¯·þÎñÆ÷,¿ª·þ¹ý³ÌÇëÄÍÐÄµÈ´ý...
+@echo.- é¢„å¤‡å¼€æœå·¥ä½œå®Œæ¯•,å‡†å¤‡å¯åŠ¨æœåŠ¡å™¨,å¼€æœè¿‡ç¨‹è¯·è€å¿ƒç­‰å¾…...
 @echo.
 @echo. ---------------------------------------------------------------
 @echo.
@@ -56,7 +53,7 @@ java -Xms128M -Xmx%Money% %SetCanShu% -jar %Server% nogui
 color 4f
 @echo. 
 @echo. ----------------------------------------------------------
-@echo.©ï ·þÎñÆ÷ÒÑ¾­¹Ø±Õ,ÈçÐèÖØÆôÇë°´ÈÎÒâ¼ü£¬²»ÐèÒªÇëÖ±½ÓXµô±¾¿ò ©ï
+@echo.â•‹ æœåŠ¡å™¨å·²ç»å…³é—­,å¦‚éœ€é‡å¯è¯·æŒ‰ä»»æ„é”®ï¼Œä¸éœ€è¦è¯·ç›´æŽ¥XæŽ‰æœ¬æ¡† â•‹
 @echo. ----------------------------------------------------------
 @echo. 
 
