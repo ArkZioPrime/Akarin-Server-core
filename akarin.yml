@@ -1,0 +1,10 @@
+# This is the global configuration file for Akarin.
+# Some options may impact gameplay, so use with caution,
+# and make sure you know what each option does before configuring.
+# 
+# Akarin website: https://akarin.io/ 
+
+config-version: 2
+alternative:
+  gc-before-stuck-restart: true
+  modified-server-brand-name: ''
